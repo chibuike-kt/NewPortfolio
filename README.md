@@ -24,12 +24,6 @@ portfolio/
 │   ├── docs/
 │   │   └── resume.pdf      # Your resume
 │   └── images/             # OG image, favicon etc.
-└── sections/               # HTML partials (for reference/editing)
-    ├── hero.html
-    ├── work.html
-    ├── skills.html
-    ├── experience.html
-    └── contact.html
 ```
 
 ## Deploy to Vercel
