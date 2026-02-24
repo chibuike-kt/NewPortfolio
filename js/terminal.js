@@ -5,8 +5,8 @@
  */
 
 const TERMINAL_LINES = [
-  "kingsley@lagos ~ php artisan serve",
-  "money moves through code I wrote",
+  "kingsley ~ php artisan serve",
+  "money moves through code I write",
   "double entry ledgers, crypto rails, fiat gateways",
   "fraud systems, secure APIs, things that actually work",
   "status: available and building_",
