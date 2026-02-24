@@ -1,20 +1,53 @@
 /**
  * nav.js
- * Handles nav border appearance on scroll and
- * smooth scroll for anchor links.
+ * Handles nav border appearance on scroll,
+ * smooth scroll for anchor links,
+ * and mobile hamburger menu toggle.
  */
 
 export function initNav() {
   const nav = document.querySelector(".nav");
+  const burger = document.getElementById("navBurger");
+  const drawer = document.getElementById("navDrawer");
+
   if (!nav) return;
 
   // ── Scrolled class for border ──
   const onScroll = () => {
     nav.classList.toggle("scrolled", window.scrollY > 20);
   };
-
   window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll(); // Run on load in case page is already scrolled
+  onScroll();
+
+  // ── Hamburger toggle ──
+  if (burger && drawer) {
+    burger.addEventListener("click", () => {
+      const isOpen = burger.classList.toggle("is-open");
+      drawer.classList.toggle("is-open", isOpen);
+      burger.setAttribute("aria-expanded", isOpen);
+      drawer.setAttribute("aria-hidden", !isOpen);
+    });
+
+    // Close drawer when a link inside it is clicked
+    drawer.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        burger.classList.remove("is-open");
+        drawer.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+        drawer.setAttribute("aria-hidden", "true");
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && !drawer.contains(e.target)) {
+        burger.classList.remove("is-open");
+        drawer.classList.remove("is-open");
+        burger.setAttribute("aria-expanded", "false");
+        drawer.setAttribute("aria-hidden", "true");
+      }
+    });
+  }
 
   // ── Smooth anchor scroll ──
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
