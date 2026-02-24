@@ -1,0 +1,105 @@
+/* ─────────────────────────────────────────
+   layout.css — Page Structure & Navigation
+───────────────────────────────────────── */
+
+/* ── Nav ── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  height: var(--nav-height);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-base);
+}
+
+.nav.scrolled {
+  border-bottom-color: var(--color-border);
+}
+
+.nav__logo {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.nav__links a {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+  color: var(--color-accent);
+}
+
+/* ── Page wrapper ── */
+.page {
+  padding-top: var(--nav-height);
+}
+
+/* ── Content container ── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Section ── */
+.section {
+  padding: var(--space-16) 0;
+}
+
+.section--hero {
+  padding-top: 80px;
+  padding-bottom: var(--space-16);
+}
+
+/* ── Rule divider ── */
+.rule {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 0;
+}
+
+/* ── Section header ── */
+.section__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: var(--space-8);
+}
+
+.section__number {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* ── Contact grid ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: var(--space-6);
+}

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>Kingsley Chibueze — PHP Backend Engineer</title>
+  <meta name="description" content="PHP backend engineer who builds fintech rails, double entry ledgers, crypto and fiat payment systems, and secure APIs. I don't follow the rulebook, I write my own." />
+  <meta name="author" content="Kingsley Chibueze" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Kingsley Chibueze — PHP Backend Engineer" />
+  <meta property="og:description" content="PHP backend engineer who builds fintech rails, double entry ledgers, crypto and fiat payment systems, and secure APIs." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://kingsley-chibueze.vercel.app/" />
+  <meta property="og:image"       content="/assets/images/og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Kingsley Chibueze — PHP Backend Engineer" />
+  <meta name="twitter:description" content="PHP backend engineer who builds fintech rails, double entry ledgers, and secure APIs. I don't follow the rulebook, I write my own." />
+  <meta name="twitter:image"       content="/assets/images/og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets (order matters) -->
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#hero" class="nav__logo">Kingsley Chibueze</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/assets/docs/resume.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page">
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ════════════════════════════════════════ -->
+    <section id="hero" class="section section--hero">
+      <div class="container hero">
+        <p class="hero-label">PHP Backend Engineer</p>
+
+        <h1>
+          I understand<br />
+          how <em>money moves</em><br />
+          and I build for it.
+        </h1>
+
+        <p class="hero-bio">
+          PHP backend engineer from Lagos. I build fintech rails, payment gateways,
+          double entry ledgers, fraud systems and secure APIs across fiat and crypto.
+          I don't follow set patterns blindly. I understand the problem first,
+          then I build what actually fits.
+        </p>
+
+        <!-- Terminal animation block -->
+        <div class="terminal" role="status" aria-live="polite" aria-label="System status">
+          <div class="terminal__line">
+            <span class="terminal__prompt" aria-hidden="true">~</span>
+            <span class="terminal__text" id="terminal-output"></span>
+            <span class="terminal__cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="hero-footer">
+          <span class="avail">
+            <span class="avail__dot" aria-hidden="true"></span>
+            Open to opportunities
+          </span>
+        </div>
+
+        <nav class="link-group" aria-label="Social links">
+          <a href="https://github.com/kingsley-chibueze" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="github"></i> GitHub
+          </a>
+          <a href="https://x.com/kingsley_dev" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="twitter"></i> Twitter/X
+          </a>
+          <a href="mailto:hello@kingsleychibueze.dev" class="icon-link">
+            <i data-lucide="mail"></i> Email
+          </a>
+          <a href="/assets/docs/resume.pdf" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="file-text"></i> Resume
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- ═══════════════════════════════════════
+         FOCUS
+    ════════════════════════════════════════ -->
+    <section id="focus" class="section fade-in">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">01</span>
+          <h2>What I Actually Do</h2>
+        </div>
+
+        <div class="focus-grid">
+
+          <div class="focus-card focus-card--primary">
+            <div class="focus-card__icon">
+              <i data-lucide="banknote"></i>
+            </div>
+            <h3 class="focus-card__title">Fintech Rails</h3>
+            <p class="focus-card__desc">
+              End to end payment systems across fiat and crypto. I've built the full stack of money movement
+              from wallet creation to settlement, not just the integration layer.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-card__icon">
+              <i data-lucide="book-open"></i>
+            </div>
+            <h3 class="focus-card__title">Double Entry Ledgers</h3>
+            <p class="focus-card__desc">
+              Proper accounting logic in code. Journals, balance snapshots,
+              atomic transfers and reconciliation that stays accurate under pressure.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-card__icon">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3 class="focus-card__title">Fraud and Risk</h3>
+            <p class="focus-card__desc">
+              Velocity checks, risk scoring, device signals and compliance logic.
+              I think about abuse vectors before they happen.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-card__icon">
+              <i data-lucide="lock"></i>
+            </div>
+            <h3 class="focus-card__title">Secure APIs</h3>
+            <p class="focus-card__desc">
+              Auth systems, session hardening, rate limiting and access control
+              designed to hold up in production not just pass a code review.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-card__icon">
+              <i data-lucide="bitcoin"></i>
+            </div>
+            <h3 class="focus-card__title">Crypto Infrastructure</h3>
+            <p class="focus-card__desc">
+              On-chain monitoring, custody flows, deposit confirmation and
+              webhook handling for both EVM and non-EVM chains.
+            </p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-card__icon">
+              <i data-lucide="cpu"></i>
+            </div>
+            <h3 class="focus-card__title">Systems Thinking</h3>
+            <p class="focus-card__desc">
+              I improvise where others copy paste. My patterns are built for
+              the problem in front of me not the tutorial I last read.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- ═══════════════════════════════════════
+         WORK
+    ════════════════════════════════════════ -->
+    <section id="work" class="section fade-in">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">02</span>
+          <h2>Selected Work</h2>
+        </div>
+
+        <ul class="project-list" role="list">
+
+          <li>
+            <a class="project-item" href="#" aria-label="Crypto Custody Rails project">
+              <div class="project-item__body">
+                <h3 class="project-item__title">Crypto Custody Rails</h3>
+                <p class="project-item__desc">
+                  Built the full custody pipeline from address generation to on-chain confirmation and ledger posting.
+                  Every deposit is monitored, verified and settled without manual intervention.
+                </p>
+                <div class="project-item__tags">
+                  <span class="project-item__tag">PHP</span>
+                  <span class="project-item__tag">Crypto</span>
+                  <span class="project-item__tag">Ledger</span>
+                </div>
+              </div>
+              <span class="project-item__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="project-item" href="#" aria-label="Double Entry Ledger project">
+              <div class="project-item__body">
+                <h3 class="project-item__title">Double Entry Ledger Engine</h3>
+                <p class="project-item__desc">
+                  Proper accounting in PHP. Every transaction creates two entries, balances are always provable
+                  and the audit trail is there whether anyone asks for it or not.
+                </p>
+                <div class="project-item__tags">
+                  <span class="project-item__tag">PHP</span>
+                  <span class="project-item__tag">Fintech</span>
+                  <span class="project-item__tag">Accounting</span>
+                </div>
+              </div>
+              <span class="project-item__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="project-item" href="#" aria-label="End to End Payment Gateway project">
+              <div class="project-item__body">
+                <h3 class="project-item__title">End to End Payment Gateway</h3>
+                <p class="project-item__desc">
+                  Built a complete payment gateway integrating Paystack and Flutterwave with custom fee rules,
+                  split logic, webhook verification and idempotent retry handling.
+                </p>
+                <div class="project-item__tags">
+                  <span class="project-item__tag">PHP</span>
+                  <span class="project-item__tag">Paystack</span>
+                  <span class="project-item__tag">Flutterwave</span>
+                </div>
+              </div>
+              <span class="project-item__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="project-item" href="#" aria-label="Feed Ranking Algorithm project">
+              <div class="project-item__body">
+                <h3 class="project-item__title">Feed Ranking Algorithm</h3>
+                <p class="project-item__desc">
+                  Replicated Instagram's feed ranking in pure PHP. Scoring signals, time decay, engagement weights
+                  and real-time personalization without a single ML dependency.
+                </p>
+                <div class="project-item__tags">
+                  <span class="project-item__tag">PHP</span>
+                  <span class="project-item__tag">Algorithm</span>
+                  <span class="project-item__tag">Backend</span>
+                </div>
+              </div>
+              <span class="project-item__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="project-item" href="#" aria-label="Auth and Security System project">
+              <div class="project-item__body">
+                <h3 class="project-item__title">Auth and Security System</h3>
+                <p class="project-item__desc">
+                  Session hardening, rate limiting, device fingerprinting and logout-everywhere built
+                  into a Laravel app that handles real financial data. Security was the feature not the afterthought.
+                </p>
+                <div class="project-item__tags">
+                  <span class="project-item__tag">Laravel</span>
+                  <span class="project-item__tag">Auth</span>
+                  <span class="project-item__tag">Security</span>
+                </div>
+              </div>
+              <span class="project-item__arrow" aria-hidden="true">
+                <i data-lucide="arrow-up-right"></i>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- ═══════════════════════════════════════
+         SKILLS
+    ════════════════════════════════════════ -->
+    <section id="skills" class="section fade-in">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">03</span>
+          <h2>Skills &amp; Stack</h2>
+        </div>
+
+        <p class="skills-intro">
+          My stack is built around PHP and Laravel but I'm not limited to it.
+          I pick what solves the problem. These are the tools I actually use and know well enough to go deep.
+        </p>
+
+        <!-- ── Languages & Frameworks ── -->
+        <div class="stack-category">
+          <p class="stack-category__label">Languages &amp; Frameworks</p>
+          <div class="stack-grid">
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+              </div>
+              <span class="stack-item__name">PHP</span>
+              <span class="stack-item__note">OOP · vanilla &amp; modern</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" />
+              </div>
+              <span class="stack-item__name">Laravel</span>
+              <span class="stack-item__note">Primary framework</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              </div>
+              <span class="stack-item__name">Node.js</span>
+              <span class="stack-item__note">Runtime · async APIs</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+              </div>
+              <span class="stack-item__name">Express</span>
+              <span class="stack-item__note">REST API layer</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--tailwind">
+                <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+              </div>
+              </div>
+              <span class="stack-item__name">Tailwind CSS</span>
+              <span class="stack-item__note">Utility-first CSS framework</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--javascript">
+                <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              </div>
+              </div>
+              <span class="stack-item__name">JavaScript</span>
+              <span class="stack-item__note">Modern ES6+ · DOM manipulation</span>
+            </div>
+
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--livewire">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 4C11.163 4 4 11.163 4 20s7.163 16 16 16 16-7.163 16-16S28.837 4 20 4zm0 6a10 10 0 110 20A10 10 0 0120 10z" fill="#FB70A9"/>
+                  <path d="M20 14a6 6 0 100 12 6 6 0 000-12z" fill="#FB70A9" opacity=".5"/>
+                </svg>
+              </div>
+              <span class="stack-item__name">Livewire</span>
+              <span class="stack-item__note">Reactive Laravel UIs</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Data & Infrastructure ── -->
+        <div class="stack-category">
+          <p class="stack-category__label">Data &amp; Infrastructure</p>
+          <div class="stack-grid">
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+              </div>
+              <span class="stack-item__name">MySQL</span>
+              <span class="stack-item__note">Primary database</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+              </div>
+              <span class="stack-item__name">Redis</span>
+              <span class="stack-item__note">Cache · queues · sessions</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+              </div>
+              <span class="stack-item__name">Docker</span>
+              <span class="stack-item__note">Containers · dev environments</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+              </div>
+              <span class="stack-item__name">Git</span>
+              <span class="stack-item__note">Version control · workflows</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Testing & Tooling ── -->
+        <div class="stack-category">
+          <p class="stack-category__label">Testing &amp; Tooling</p>
+          <div class="stack-grid">
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <!-- PHPUnit official logo from their GitHub releases -->
+                <img src="https://phpunit.de/img/phpunit.svg" alt="PHPUnit" />
+              </div>
+              <span class="stack-item__name">PHPUnit</span>
+              <span class="stack-item__note">Unit &amp; feature tests</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />
+              </div>
+              <span class="stack-item__name">Postman</span>
+              <span class="stack-item__note">API testing &amp; docs</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--queue">
+                <i data-lucide="layers" style="width:28px;height:28px;color:var(--color-accent);"></i>
+              </div>
+              <span class="stack-item__name">Laravel Queues</span>
+              <span class="stack-item__note">Jobs · workers · Horizon</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Fintech & Payment APIs ── -->
+        <div class="stack-category">
+          <p class="stack-category__label">Fintech &amp; Payment APIs</p>
+          <div class="stack-grid">
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--logo">
+                <img
+                  src="https://asset.brandfetch.io/idyZRtJnOz/idMeFEaNk-.png"
+                  alt="Paystack"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <span class="stack-item__icon-fallback" style="display:none;">
+                  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#0050C8"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="10" font-family="DM Mono, monospace" font-weight="500">PAY</text>
+                  </svg>
+                </span>
+              </div>
+              <span class="stack-item__name">Paystack</span>
+              <span class="stack-item__note">Payments, webhooks, splits</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--logo">
+                <img
+                  src="https://asset.brandfetch.io/idynFCBuCe/idgC7GZTJ5.png"
+                  alt="Flutterwave"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <span class="stack-item__icon-fallback" style="display:none;">
+                  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#F5A623"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="9.5" font-family="DM Mono, monospace" font-weight="500">FLW</text>
+                  </svg>
+                </span>
+              </div>
+              <span class="stack-item__name">Flutterwave</span>
+              <span class="stack-item__note">Multi-currency, disbursements</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--logo">
+                <img
+                  src="https://asset.brandfetch.io/idgDNpFcpN/idST4S7UXU.png"
+                  alt="Mono"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <span class="stack-item__icon-fallback" style="display:none;">
+                  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#1a1a1a"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="10" font-family="DM Mono, monospace" font-weight="500">MNO</text>
+                  </svg>
+                </span>
+              </div>
+              <span class="stack-item__name">Mono</span>
+              <span class="stack-item__note">Open banking, account data</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--api">
+                <i data-lucide="book-open" style="width:26px;height:26px;color:var(--color-accent);"></i>
+              </div>
+              <span class="stack-item__name">Ledger Systems</span>
+              <span class="stack-item__note">Double entry, reconciliation</span>
+            </div>
+
+            <div class="stack-item">
+              <div class="stack-item__icon stack-item__icon--api">
+                <i data-lucide="shield-check" style="width:26px;height:26px;color:var(--color-accent);"></i>
+              </div>
+              <span class="stack-item__name">Fraud &amp; Risk</span>
+              <span class="stack-item__note">Velocity, limits, signals</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Engineering Depth ── -->
+        <div class="stack-category stack-category--depth">
+          <p class="stack-category__label">Engineering Depth</p>
+          <div class="depth-grid">
+            <div class="depth-item">
+              <i data-lucide="repeat-2" class="depth-item__icon"></i>
+              <div>
+                <p class="depth-item__title">Idempotency &amp; Safe Retries</p>
+                <p class="depth-item__desc">Dedup keys, exactly-once semantics, retry-safe endpoints</p>
+              </div>
+            </div>
+            <div class="depth-item">
+              <i data-lucide="lock" class="depth-item__icon"></i>
+              <div>
+                <p class="depth-item__title">Auth &amp; Session Security</p>
+                <p class="depth-item__desc">Sanctum, rate limiting, session hardening, logout-everywhere</p>
+              </div>
+            </div>
+            <div class="depth-item">
+              <i data-lucide="activity" class="depth-item__icon"></i>
+              <div>
+                <p class="depth-item__title">Observability &amp; Audit Trails</p>
+                <p class="depth-item__desc">Trace IDs, structured logs, reconciliation views, Telescope</p>
+              </div>
+            </div>
+            <div class="depth-item">
+              <i data-lucide="git-branch" class="depth-item__icon"></i>
+              <div>
+                <p class="depth-item__title">Clean Architecture</p>
+                <p class="depth-item__desc">Domain logic, service layers, SOLID, testable abstractions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- ═══════════════════════════════════════
+         EXPERIENCE
+    ════════════════════════════════════════ -->
+    <section id="experience" class="section fade-in">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">04</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="exp-list">
+          <article class="exp-item">
+            <div class="exp-item__header">
+              <h3 class="exp-item__role">Senior Application Developer</h3>
+              <span class="exp-item__date">2022 → 2025</span>
+            </div>
+            <p class="exp-item__company">Urban Service Hub</p>
+            <p class="exp-item__desc">
+              Built the backend for a services marketplace from the ground up. Designed the payment flows,
+              user auth system and core business logic. Kept things clean enough that the next engineer
+              could actually read what I wrote.
+            </p>
+          </article>
+
+          <article class="exp-item">
+            <div class="exp-item__header">
+              <h3 class="exp-item__role">Chief Operating Officer</h3>
+              <span class="exp-item__date">2022 → 2026</span>
+            </div>
+            <p class="exp-item__company">BuildHubb</p>
+            <p class="exp-item__desc">
+              Wore both the technical and operational hat. Shipped production software for multiple clients,
+              ran engineering decisions, and worked directly with founders to turn ideas into working systems.
+            </p>
+          </article>
+        </div>
+
+        <!-- Engineering Principles -->
+        <div class="section__header" style="margin-top: 3rem; margin-bottom: 1.2rem;">
+          <h2 class="h2--sm">How I think</h2>
+        </div>
+
+        <ul class="principles" role="list">
+          <li class="principle">
+            <span class="principle__icon" aria-hidden="true"><i data-lucide="check"></i></span>
+            <span class="principle__text">Money has to balance. I don't ship ledger code until the accounting is provably correct.</span>
+          </li>
+          <li class="principle">
+            <span class="principle__icon" aria-hidden="true"><i data-lucide="check"></i></span>
+            <span class="principle__text">Security is not a feature you add at the end. It's in every decision from the first route.</span>
+          </li>
+          <li class="principle">
+            <span class="principle__icon" aria-hidden="true"><i data-lucide="check"></i></span>
+            <span class="principle__text">I improvise. If the framework pattern doesn't fit the problem I build a better one.</span>
+          </li>
+          <li class="principle">
+            <span class="principle__icon" aria-hidden="true"><i data-lucide="check"></i></span>
+            <span class="principle__text">If something breaks in production I want to know exactly why in under two minutes.</span>
+          </li>
+          <li class="principle">
+            <span class="principle__icon" aria-hidden="true"><i data-lucide="check"></i></span>
+            <span class="principle__text">I write code for the next developer too not just the computer running it.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container"><hr class="rule" /></div>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT
+    ════════════════════════════════════════ -->
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__number">05</span>
+          <h2>Contact</h2>
+        </div>
+
+        <p class="hero-bio" style="margin-bottom: 2rem;">
+          If you're building something in fintech, payments or anything that needs serious backend thinking,
+          I want to hear about it. I'm based in Lagos and I reply fast to real conversations.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <p class="contact-meta__label">Time zone</p>
+            <p class="contact-meta__value">Africa/Lagos · UTC+1</p>
+          </div>
+          <div>
+            <p class="contact-meta__label">Open to</p>
+            <p class="contact-meta__value">Backend roles, fintech contracts, consulting</p>
+          </div>
+        </div>
+
+        <nav class="link-group" aria-label="Contact links">
+          <a href="mailto:hello@kingsleychibueze.dev" class="icon-link">
+            <i data-lucide="mail"></i> Email
+          </a>
+          <a href="https://github.com/kingsley-chibueze" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="github"></i> GitHub
+          </a>
+          <a href="https://x.com/kingsley_dev" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="twitter"></i> Twitter/X
+          </a>
+          <a href="/assets/docs/resume.pdf" class="icon-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="file-text"></i> Resume PDF
+          </a>
+        </nav>
+      </div>
+    </section>
+
+  </div><!-- /page -->
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Kingsley Chibueze</p>
+  </footer>
+
+  <!-- JS modules -->
+  <script type="module" src="/js/main.js"></script>
+
+  <!-- Dynamic year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

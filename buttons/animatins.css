@@ -1,0 +1,55 @@
+/* ─────────────────────────────────────────
+   animations.css — Keyframes & Transitions
+───────────────────────────────────────── */
+
+/* ── Cursor blink ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.terminal__cursor {
+  animation: blink 1s step-end infinite;
+}
+
+/* ── Availability pulse ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+  50%       { opacity: 0.6; box-shadow: 0 0 0 4px rgba(74, 222, 128, 0); }
+}
+
+.avail__dot {
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+/* ── Scroll fade-in ── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children inside fade-in containers */
+.fade-in:nth-child(1) { transition-delay: 0ms; }
+.fade-in:nth-child(2) { transition-delay: 60ms; }
+.fade-in:nth-child(3) { transition-delay: 120ms; }
+.fade-in:nth-child(4) { transition-delay: 180ms; }
+.fade-in:nth-child(5) { transition-delay: 240ms; }
+
+/* ── Page load reveal (hero) ── */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-label   { animation: slideUp 0.6s ease 0.1s both; }
+.hero h1      { animation: slideUp 0.6s ease 0.22s both; }
+.hero-bio     { animation: slideUp 0.6s ease 0.34s both; }
+.terminal     { animation: slideUp 0.6s ease 0.46s both; }
+.hero-footer  { animation: slideUp 0.6s ease 0.54s both; }
+.link-group   { animation: slideUp 0.6s ease 0.62s both; }

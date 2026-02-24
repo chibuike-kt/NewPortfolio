@@ -1,0 +1,614 @@
+/* ─────────────────────────────────────────
+   components.css — Reusable UI Components
+───────────────────────────────────────── */
+
+/* ── Typography ── */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: var(--text-hero);
+  line-height: 1.1;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h2.h2--sm {
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+}
+
+/* ── Hero label ── */
+.hero-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent);
+  margin-bottom: 1.8rem;
+}
+
+.hero-label::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 1px;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ── Hero bio ── */
+.hero-bio {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: 1.85;
+  max-width: 520px;
+  margin-bottom: var(--space-8);
+}
+
+/* ── Terminal ── */
+.terminal {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.3rem;
+  margin-bottom: var(--space-8);
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.terminal__line {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--text-sm);
+  line-height: 1;
+}
+
+.terminal__prompt {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.terminal__text {
+  color: var(--color-text-secondary);
+}
+
+.terminal__cursor {
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ── Availability badge ── */
+.avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.avail__dot {
+  width: 7px;
+  height: 7px;
+  background: var(--color-green);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Hero footer row ── */
+.hero-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: var(--space-6);
+}
+
+/* ── Icon links (hero + contact) ── */
+.link-group {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1px;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.icon-link:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.icon-link svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+/* ── Focus Cards ── */
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.focus-card {
+  background: var(--color-bg);
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: background var(--transition-fast);
+  cursor: default;
+}
+
+.focus-card:hover {
+  background: var(--color-surface);
+}
+
+.focus-card--primary {
+  background: var(--color-surface);
+}
+
+.focus-card--primary .focus-card__icon {
+  color: var(--color-accent);
+}
+
+.focus-card__icon {
+  color: var(--color-text-faint);
+  transition: color var(--transition-fast);
+  width: 18px;
+  height: 18px;
+}
+
+.focus-card__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.focus-card:hover .focus-card__icon {
+  color: var(--color-accent);
+}
+
+.focus-card__title {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  letter-spacing: 0.02em;
+}
+
+.focus-card__desc {
+  font-size: 11.5px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ── Focus Cards ── */
+.tag-group {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.tag:hover,
+.tag--active {
+  color: var(--color-accent);
+  border-color: var(--color-accent-border);
+  background: var(--color-accent-dim);
+}
+
+/* ── Project list ── */
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: none;
+  cursor: pointer;
+}
+
+.project-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.project-item:hover .project-item__title {
+  color: var(--color-accent);
+}
+
+.project-item:hover .project-item__arrow {
+  color: var(--color-accent);
+  transform: translate(2px, -2px);
+}
+
+.project-item__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: #d8d5cf;
+  margin-bottom: 0.35rem;
+  transition: color var(--transition-fast);
+}
+
+.project-item__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  max-width: 460px;
+}
+
+.project-item__tags {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+}
+
+.project-item__tag {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.project-item__arrow {
+  color: var(--color-text-faint);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.project-item__arrow svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ── Skills & Stack — Redesigned ── */
+
+.skills-intro {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+/* Category block */
+.stack-category {
+  margin-bottom: 2.8rem;
+}
+
+.stack-category__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.stack-category__label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* Tech icon grid */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.stack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 1.4rem 1rem;
+  background: var(--color-bg);
+  transition: background var(--transition-fast);
+  text-align: center;
+}
+
+.stack-item:hover {
+  background: var(--color-surface);
+}
+
+.stack-item:hover .stack-item__name {
+  color: var(--color-accent);
+}
+
+.stack-item__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stack-item__icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter var(--transition-fast);
+}
+
+.stack-item:hover .stack-item__icon img {
+  filter: grayscale(0%);
+}
+
+/* Express icon is white on dark — invert it */
+.stack-item__icon img[alt="Express"] {
+  filter: invert(0.75);
+}
+.stack-item:hover .stack-item__icon img[alt="Express"] {
+  filter: invert(0.9);
+}
+
+.stack-item__icon--logo {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.stack-item__icon--logo img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  filter: none;
+}
+
+.stack-item__icon-fallback {
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack-item__icon-fallback svg {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack-item__icon--api svg,
+.stack-item__icon--livewire svg {
+  width: 32px;
+  height: 32px;
+}
+
+.stack-item__name {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  transition: color var(--transition-fast);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.stack-item__note {
+  font-size: 10px;
+  color: var(--color-text-faint);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+/* Engineering depth — row layout */
+.stack-category--depth .depth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.depth-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.3rem 1.2rem;
+  background: var(--color-bg);
+  transition: background var(--transition-fast);
+}
+
+.depth-item:hover {
+  background: var(--color-surface);
+}
+
+.depth-item__icon {
+  width: 15px;
+  height: 15px;
+  color: var(--color-accent);
+  opacity: 0.75;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.depth-item__title {
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.01em;
+}
+
+.depth-item__desc {
+  font-size: 11px;
+  color: var(--color-text-faint);
+  line-height: 1.55;
+}
+
+/* ── Experience ── */
+.exp-item {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.exp-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.exp-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.exp-item__role {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: #d8d5cf;
+}
+
+.exp-item__date {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  letter-spacing: 0.08em;
+}
+
+.exp-item__company {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.6rem;
+}
+
+.exp-item__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ── Principles ── */
+.principles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: var(--space-8);
+}
+
+.principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.principle__icon {
+  color: var(--color-accent);
+  opacity: 0.7;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.principle__icon svg {
+  width: 13px;
+  height: 13px;
+}
+
+.principle__text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ── Contact meta ── */
+.contact-meta__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-text-faint);
+  margin-bottom: 0.5rem;
+}
+
+.contact-meta__value {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  letter-spacing: 0.1em;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}

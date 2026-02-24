@@ -1,0 +1,83 @@
+/* ─────────────────────────────────────────
+   responsive.css — Mobile Breakpoints
+───────────────────────────────────────── */
+
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  :root {
+    --max-width: 100%;
+  }
+
+  .nav {
+    padding: 0 1.5rem;
+  }
+
+  .nav__links {
+    gap: 1.4rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stack-category--depth .depth-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 540px) {
+  .nav__links {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-category--depth .depth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item__header {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-group {
+    gap: 1.1rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+}
