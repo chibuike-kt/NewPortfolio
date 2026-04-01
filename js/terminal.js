@@ -5,11 +5,10 @@
  */
 
 const TERMINAL_LINES = [
-  "kingsley ~ php artisan serve",
-  "money moves through code I write",
-  "double entry ledgers, crypto rails, fiat gateways",
-  "fraud systems, secure APIs, things that actually work",
-  "status: available and building_",
+  "kingsley ~ Backend Engineer",
+  "Dark mode, of course.",
+  "Claude is my co-pilot.",
+  "status: available and building",
 ];
 
 const CONFIG = {
